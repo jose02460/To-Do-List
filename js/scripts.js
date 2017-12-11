@@ -17,20 +17,9 @@ $(function() {
     $('textarea#inputTaskDesc').val("");
   });
 
-
-  $('div#taskCard').click(function() {
-    if ($('.form-check-input').last().is(':checked')) {
-      $('ul#toDoListDisplay').last().remove()
+  $('ul#toDoListDisplay').click(function() {
+    if ($('.form-check-input').is(':checked')) {
+      $('li').last().remove()
     }
   });
-  // $('.form-check-input').trigger("click", function() {
-  //   if ($('.form-check-input').is(':checked')) {
-  //     $('ul#toDoListDisplay').last().remove();
-  //   }
-  // });
-
-  // $('.form-check-input').prop("checked", true).last().trigger("click", function() {
-  //   // $('#taskCard').show();
-  //   $('ul#toDoListDisplay').append('<li class="list-group-item">' + newTask.taskName + '<label class="form-check-label float-right"><input class="form-check-input" type="checkbox"> Done </label><ul class="list-group list-group-flush"><li class="list-group-item">' + newTask.taskDesc + '</li></ul></li>');
-  // });
 });
