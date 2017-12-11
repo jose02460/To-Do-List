@@ -6,3 +6,6 @@ html, body {
   margin-top: -0.5rem;
   padding-bottom: 1.5rem;
 }
+#taskCard {
+  /*display: none;*/
+}
