@@ -1,0 +1,8 @@
+html, body {
+  background-color: #cccccc;
+  height: 100%;
+}
+.footer {
+  margin-top: -0.5rem;
+  padding-bottom: 1.5rem;
+}
